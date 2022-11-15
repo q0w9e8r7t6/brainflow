@@ -87,6 +87,7 @@ pub enum BoardIds {
     Explore4ChanBoard = 44,
     Explore8ChanBoard = 45,
     GanglionNativeBoard = 46,
+    EEGDAQBoard = 47,
 }
 #[repr(i32)]
 #[derive(FromPrimitive, ToPrimitive, Debug, Copy, Clone, Hash, PartialEq, Eq)]

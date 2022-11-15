@@ -66,7 +66,8 @@ BrainFlowBoards::BrainFlowBoards()
             {"43", json::object()},
             {"44", json::object()},
             {"45", json::object()},
-            {"46", json::object()}
+            {"46", json::object()},
+            {"47", json::object()}
         }
     }};
 
@@ -871,6 +872,28 @@ BrainFlowBoards::BrainFlowBoards()
         {"accel_channels", {5, 6, 7}},
         {"resistance_channels", {8, 9, 10, 11, 12}}
     };
+    brainflow_boards_json["boards"]["47"]["default"] =
+    {
+        {"name", "EEGDAQ"},
+        {"sampling_rate", 250},
+        {"package_num_channel", 0},
+        {"battery_channel", 29},
+        {"timestamp_channel", 30},
+        {"marker_channel", 31},
+        {"num_rows", 32},
+        {"eeg_channels", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}},
+        {"eeg_names", "Fz,C3,Cz,C4,Pz,PO7,Oz,PO8,F5,F7,F3,F1,F2,F4,F6,F8"},
+        {"emg_channels", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}},
+        {"ecg_channels", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}},
+        {"eog_channels", {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}},
+        {"accel_channels", {17, 18, 19}},
+        {"gyro_channels", {20, 21, 22}},
+        {"eda_channels", {23}},
+        {"ppg_channels", {24, 25}},
+        {"temperature_channels", {26}},
+        {"resistance_channels", {27, 28}}
+    };
+
 }
 
 BrainFlowBoards boards_struct;
